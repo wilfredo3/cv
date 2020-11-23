@@ -1,9 +1,11 @@
 .navbar{
   background-color: #66BFBF;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: sticky;
+  top: 0;
 }
 
 .navbar__container{

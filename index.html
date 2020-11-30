@@ -9,12 +9,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/c52b0a23ee.js" crossorigin="anonymous"></script>
     <title>Wilfredo Ruiz</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
     <script src="js/modernizr.js"></script> 
 </head>
-    <body data-hijacking="off" data-animation="scaleDown">
-        <div class="Navbar">
+    <body>
+        <section class="et-hero-tabs">
+            <div class="et-hero-tabs-container">
+              <a class="et-hero-tab" href="#home">Home</a>
+              <a class="et-hero-tab" href="#about-me">About Me</a>
+              <a class="et-hero-tab" href="#skills">Skills</a>
+              <a class="et-hero-tab" href="#contact">Contact</a>
+              <span class="et-hero-tab-slider"></span>
+            </div>
+        </section>
+        <!-- <div class="Navbar">
             <div class="Navbar__Link Navbar__Link-toggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -32,17 +41,59 @@
                     Contact
                 </div>
             </nav>
-        </div>
-        <section class="cd-section visible">
-            <div class="top-container">
-                <h2>Hello.</h2>
-                <h1>I'm Wilfredo</h1>
-                <h2>a programmer</h2>
-                <h2>Welcome to my website!</h2>
-            </div>
-        </section>
+        </div> -->
+        <main class="et-main">
+            <section class="et-slide" id="home">
+                <!-- <div class="top-container"> -->
+                    <h2>Hello.</h2>
+                    <h1>I'm Wilfredo</h1>
+                    <h2>a programmer</h2>
+                    <h2>Welcome to my website!</h2>
+                <!-- </div> -->
+            </section>
+            <section class="et-slide" id="about-me">
+                <div class="profile">
+                    <img src="https://img.icons8.com/dusk/64/000000/school-director-male-skin-type-7.png"/>
+                    <h2>About me</h2>
+                    <p>I graduated from the University of Puerto Rico - Mayaguez of Computer Science.</p>
+                    <p>In there, I was invited to the IgniteCS Project and from there I decided to learn coding.</p>
+                  </div>
+            </section>
+            <section class="et-slide" id="skills">
+                <div class="skills">
+                    <h2>My Skills</h2>
+                    <div class="skill-row">
+                        <img src="https://img.icons8.com/ios-filled/64/000000/c-plus-plus-logo.png"/>
+                        <img src="https://img.icons8.com/dusk/64/000000/python.png"/>
+                        <h3>Development</h3>
+                        <p>
+                        My coding base is in C++. But by taking part of the IgniteCS Project, I learned Python!
+                        </p>
+                    </div>
+                    <div class="skill-row">
+                        <img src="https://img.icons8.com/nolan/64/html-filetype.png"/>
+                        <img src="https://img.icons8.com/nolan/64/css-filetype.png"/>
+                        <img src="https://img.icons8.com/nolan/64/javascript.png"/>
+                        <h3>Web Developer</h3>
+                        <p>
+                        Learned HTML, CSS, and JavaScript at intership at the University of Puerto Rico.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="et-slide" id="contact">
+                <!-- <div class="contact-me"> -->
+                    <h2>Get In Touch</h2>
+                    <h3>If you love coding as much as I do.</h3>
+                    <div class="buttons">
+                      <a href="mailto:wilfredo.ruiz3@upr.edu" class="contact_button">Contact Me</a>
+                      <a href="Wilfredo_Ruiz_Resume.pdf" class="resume" target="_blank">Resume</a>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-        <section class="cd-section">
+        <!-- <section class="cd-section">
         <div class="middle-container">
             <div class="profile">
               <img src="https://img.icons8.com/dusk/64/000000/school-director-male-skin-type-7.png"/>
@@ -79,7 +130,14 @@
                 </div>
             </div>
         </div>
-        </section>
+        </section> -->
+
+        <!-- <nav>
+            <ul class="cd-vertical-nav">
+                <li><a href="#0" class="cd-prev inactive">Next</a></li>
+                <li><a href="#0" class="cd-next">Prev</a></li>
+            </ul>
+        </nav> -->
         <!-- <div class="bottom-container">
             <p>© 2020 Wilfredo Ruiz.</p>
         </div> -->

@@ -7,6 +7,7 @@
     justify-content: center;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 .Navbar__Items {
@@ -59,7 +60,7 @@ body {
   font-family: 'Merriweather', serif;
 }
 
-h1 {
+.h1{
   font-size: 500%;
   margin-top: 40px;
   font-family: 'Sacramento', cursive;
@@ -77,6 +78,10 @@ h2 {
 h3 {
     font-family: 'Montserrat', sans-serif;
     color: #11888E;
+}
+
+.profile{
+    padding-bottom: 10px;
 }
 
 .top-container {
@@ -118,11 +123,11 @@ h3 {
     margin: 0 170px;
 }
 
-.contact_button {
+.contact_button,.resume {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    color: #FFFFFF;
+    color: black;
     font-family: Open Sans;
     font-size: 20px;
     font-weight: 100;
@@ -136,40 +141,15 @@ h3 {
     margin-bottom: 60px;
 }
   
-.resume{
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    color: #FFFFFF;
-    font-family: Open Sans;
-    font-size: 20px;
-    font-weight: 100;
-    padding: 20px;
-    background-color: #66BFBF;
-    border: solid #66BFBF 1px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    margin-bottom: 60px;
-}
-  
-.contact_button:hover {
-    background: #11999E;
+.contact_button:hover,.resume:hover {
+    background: #2ca198;
     border: solid #11999E 1px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     text-decoration: none;
-}
-  
-.resume:hover {
-    background: #11999E;
-    border: solid #11999E 1px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
 }
 
 .cd-section {
@@ -186,6 +166,7 @@ h3 {
 
 *, *::after, *::before {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 @media only screen and (min-width: 1050px) {
@@ -222,12 +203,114 @@ h3 {
       left: 0;
       width: 100%;
       /* Force Hardware Acceleration */
-      -webkit-transform: translateZ(0);
-      -moz-transform: translateZ(0);
-      -ms-transform: translateZ(0);
-      -o-transform: translateZ(0);
-      transform: translateZ(0);
+      -webkit-transform: translateZ(-100);
+      -moz-transform: translateZ(-100);
+      -ms-transform: translateZ(-100);
+      -o-transform: translateZ(-100);
+      transform: translateZ(-100);
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
     }
+}
+
+ .et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eee;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.et-slide{
+    background-color:#E4F9F5
+}
+
+.et-slide h1{
+    font-size: 100px;
+    margin-top: 40px;
+    font-family: 'Sacramento', cursive;
+    color: #66BFBF;
+    margin: 80px;
+}
+
+.et-hero-tabs h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+}
+
+.et-hero-tabs h3, .et-slide h3 {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+}
+
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #66BFBF;
+    z-index: 10;
+    top: 0;
+}
+
+/* .et-hero-tabs-container--top {
+    position: fixed;
+    top: 0;
+} */
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+}
+
+.et-hero-tab:hover {
+    color: white;
+    background: #2ca198;
+    transition: all 0.5s ease;
+}
+
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+}
+
+/* @media (max-width: 800px) {
+    .et-hero-tabs h1, .et-slide h1 {
+        font-size: 3rem;
+   }
+    .et-hero-tabs h3, .et-slide h3 {
+        font-size: 1rem;
+   }
+    .et-hero-tab {
+        font-size: 1rem;
+   }
+} */
+
+.profile img:first-child{
+    margin-bottom: 10px;
+}
+
+.profile h2{
+    font-family: sans-serif;
+    font-size: 200%;
+    font-weight: normal;
+    color: #66BFBF;
 }
